@@ -5,8 +5,6 @@ Version:	0.75
 Release:	1
 License:	Public Domain 
 Group:		Applications/Databases
-Group(de):	Applikationen/Dateibanken
-Group(pl):	Aplikacje/Bazy danych
 Source0:	http://cr.yp.to/cdb/%{name}-%{version}.tar.gz
 URL:		http://pobox.com/~djb/cdb.html 
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
