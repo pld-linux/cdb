@@ -34,7 +34,6 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 
 install cdbget cdbmake cdbdump cdbstats cdbtest \
 	cdbmake-12 cdbmake-sv rts rts.tests testzero $RPM_BUILD_ROOT%{_bindir}
-gzip -9nf CHANGES README TODO SYSDEPS
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -42,4 +41,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%doc *.gz
+%doc CHANGES README TODO SYSDEPS
