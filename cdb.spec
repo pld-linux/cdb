@@ -7,6 +7,7 @@ License:	Public Domain
 Group:		Applications/Databases
 Source0:	http://cr.yp.to/cdb/%{name}-%{version}.tar.gz
 # Source0-md5:	81fed54d0bde51b147dd6c20cdb92d51
+Patch0:		%{name}-glibc.patch
 URL:		http://cr.yp.to/cdb.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -20,6 +21,7 @@ sta³ych baz danych.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 CFLAGS="%{rpmcflags}"
