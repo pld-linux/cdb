@@ -1,9 +1,12 @@
-Summary:	Constant DataBase 
+Summary:	Constant DataBase
+Summary(pl):	Sta³a baza danych
 Name:		cdb 
 Version:	0.75 
 Release:	1
 License:	Public Domain 
-Group:		Applications/Databases 
+Group:		Applications/Databases
+Group(de):	Applikationen/Dateibanken
+Group(pl):	Aplikacje/Bazy danych
 Source0:	http://cr.yp.to/cdb/%{name}-%{version}.tar.gz
 URL:		http://pobox.com/~djb/cdb.html 
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -12,12 +15,17 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 cdb is a fast, reliable, lightweight package for creating and reading
 constant databases.
 
+%description -l pl
+cdb jest szybkim, wiarygodnym, ma³ym pakietem do tworzenia i czytania
+sta³ych baz danych.
+
 %prep
-%setup  -q 
+%setup -q
 
 %build
-export CFLAGS="%{rpmcflags}"
-echo "gcc $RPM_OPT_FLAGS -s">conf-ld
+CFLAGS="%{rpmcflags}"
+export CFLAGS
+echo "%{__cc} %{rpmcflags} %{rpmldflags}" >conf-ld
 echo %{__cc} %{rpmcflags} >conf-cc
 echo %{_prefix} > conf-home
 %{__make}
