@@ -6,6 +6,7 @@ Release:	1
 License:	Public Domain
 Group:		Applications/Databases
 Source0:	http://cr.yp.to/cdb/%{name}-%{version}.tar.gz
+# Source0-md5:	81fed54d0bde51b147dd6c20cdb92d51
 URL:		http://cr.yp.to/cdb.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
