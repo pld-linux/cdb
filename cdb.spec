@@ -1,12 +1,12 @@
 Summary:	Constant DataBase
 Summary(pl):	Sta³a baza danych
-Name:		cdb 
-Version:	0.75 
+Name:		cdb
+Version:	0.75
 Release:	1
-License:	Public Domain 
+License:	Public Domain
 Group:		Applications/Databases
 Source0:	http://cr.yp.to/cdb/%{name}-%{version}.tar.gz
-URL:		http://pobox.com/~djb/cdb.html 
+URL:		http://pobox.com/~djb/cdb.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -42,4 +42,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%doc *.gz 
+%doc *.gz
