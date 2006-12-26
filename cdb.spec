@@ -13,11 +13,30 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 cdb is a fast, reliable, lightweight package for creating and reading
-constant databases.
+constant databases. The database structure is tuned for fast reading:
+- Successful lookups take normally just two disk accesses.
+- Unsuccessful lookups take only one disk access.
+- Small disk space and memory size requirements; a database uses 2048
+  bytes for the header and 24 bytes per record plus the space for keys
+  and data.
+- Maximum database size is 4GB; individual record size is not
+  otherwise limited.
+- Portable file format.
+- Fast database replacement.
 
 %description -l pl
 cdb jest szybkim, wiarygodnym, ma³ym pakietem do tworzenia i czytania
-sta³ych baz danych.
+sta³ych baz danych. Struktura bazy zosta³a zoptymalizowana do
+szybkiego odczytu:
+- Udane odwo³ania normalnie potrzebuj± tylko dwóch odwo³añ do dysku.
+- Nieudane odwo³ania potrzebuj± tylko jednego odwo³ania do dysku.
+- Ma³e wymagania co do miejsca do dysku i pamiêci; baza danych u¿ywa
+  2048 bajtów na nag³ówek i 24 bajtów na rekord plus miejsce na klucze
+  i dane.
+- Maksymalny rozmiar bazy to 4GB; rozmiar pojedynczego rekordu nie ma
+  innych ograniczeñ.
+- Przeno¶ny format pliku.
+- Szybkie zastêpowanie baz nowo utworzonymi.
 
 %prep
 %setup -q
