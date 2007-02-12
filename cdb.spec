@@ -1,5 +1,5 @@
 Summary:	Constant DataBase
-Summary(pl.UTF-8):   Stała baza danych
+Summary(pl.UTF-8):	Stała baza danych
 Name:		cdb
 Version:	0.75
 Release:	1
