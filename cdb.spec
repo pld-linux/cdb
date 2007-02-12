@@ -1,5 +1,5 @@
 Summary:	Constant DataBase
-Summary(pl):	Sta≥a baza danych
+Summary(pl.UTF-8):   Sta≈Ça baza danych
 Name:		cdb
 Version:	0.75
 Release:	1
@@ -24,19 +24,19 @@ constant databases. The database structure is tuned for fast reading:
 - Portable file format.
 - Fast database replacement.
 
-%description -l pl
-cdb jest szybkim, wiarygodnym, ma≥ym pakietem do tworzenia i czytania
-sta≥ych baz danych. Struktura bazy zosta≥a zoptymalizowana do
+%description -l pl.UTF-8
+cdb jest szybkim, wiarygodnym, ma≈Çym pakietem do tworzenia i czytania
+sta≈Çych baz danych. Struktura bazy zosta≈Ça zoptymalizowana do
 szybkiego odczytu:
-- Udane odwo≥ania normalnie potrzebuj± tylko dwÛch odwo≥aÒ do dysku.
-- Nieudane odwo≥ania potrzebuj± tylko jednego odwo≥ania do dysku.
-- Ma≥e wymagania co do miejsca do dysku i pamiÍci; baza danych uøywa
-  2048 bajtÛw na nag≥Ûwek i 24 bajtÛw na rekord plus miejsce na klucze
+- Udane odwo≈Çania normalnie potrzebujƒÖ tylko dw√≥ch odwo≈Ça≈Ñ do dysku.
+- Nieudane odwo≈Çania potrzebujƒÖ tylko jednego odwo≈Çania do dysku.
+- Ma≈Çe wymagania co do miejsca do dysku i pamiƒôci; baza danych u≈ºywa
+  2048 bajt√≥w na nag≈Ç√≥wek i 24 bajt√≥w na rekord plus miejsce na klucze
   i dane.
 - Maksymalny rozmiar bazy to 4GB; rozmiar pojedynczego rekordu nie ma
-  innych ograniczeÒ.
-- Przeno∂ny format pliku.
-- Szybkie zastÍpowanie baz nowo utworzonymi.
+  innych ogranicze≈Ñ.
+- Przeno≈õny format pliku.
+- Szybkie zastƒôpowanie baz nowo utworzonymi.
 
 %prep
 %setup -q
